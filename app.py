@@ -4,17 +4,17 @@ from streamlit_image_coordinates import streamlit_image_coordinates
 import math
 
 # --- 1. 初期設定とデータベース ---
-st.set_page_config(page_title="LCC - LipColorCode", layout="centered")
-st.title("💄 LCC - LipColorCode")
+st.set_page_config(page_title="MLC - MyLipCode -", layout="centered")
+st.title("💄 MLC - MyLipCode -")
 
 # --- データベース ---
 LIP_DATABASE = [
-    {"name": "王道コーラルピンク", "color": (255, 102, 102), "link":"" },
-    {"name": "大人なテラコッタ", "color": (153, 51, 0), "link": ""},
-    {"name": "透明感ラズベリー", "color": (204, 0, 102), "link":""},
-    {"name": "華やか朱色レッド", "color": (255, 69, 0), "link":"" },
-    {"name": "落ち着いたベージュ", "color": (210, 180, 140), "link": ""},
-    {"name": "Ririmew_muted sheer tint_02pink fondue", "color": (193, 90, 93), "link": "https://hb.afl.rakuten.co.jp/ichiba/52e52694.a8b522e5.52e52695.0c1b728d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flilyanna%2Fririmew-tint%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"},
+    {"name": "王道コーラルピンク", "color": (255, 102, 102), "image":"", "link":"" },
+    {"name": "大人なテラコッタ", "color": (153, 51, 0), "image":"", "link": ""},
+    {"name": "透明感ラズベリー", "color": (204, 0, 102), "image":"", "link":""},
+    {"name": "華やか朱色レッド", "color": (255, 69, 0), "image":"", "link":"" },
+    {"name": "落ち着いたベージュ", "color": (210, 180, 140), "image":"", "link": ""},
+    {"name": "Ririmew_muted sheer tint_02pink fondue", "color": (193, 90, 93), "image": "https://shop.r10s.jp/lilyanna/cabinet/gazou/r/ririmew_tint_n_09.jpg", "link": "https://hb.afl.rakuten.co.jp/ichiba/52e52694.a8b522e5.52e52695.0c1b728d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flilyanna%2Fririmew-tint%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"},
 ]
 
 # --- 2. 色の距離を計算する関数 ---
@@ -73,6 +73,7 @@ if uploaded_file:
             lip_hex = '#{:02x}{:02x}{:02x}'.format(lr, lg, lb)
 
             st.markdown(f"### {i}. {lip['name']}")
+            st.image(lip["image"], width=150)
             st.markdown(
                 f"""
                 <div style="
