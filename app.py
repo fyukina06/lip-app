@@ -75,7 +75,7 @@ if uploaded_file:
         top5 = sorted(results, key=lambda x: x["distance"])[:5]
 
         st.divider()
-        st.markdown("""<h3 style='text-align: center; front-size:20px;'>
+        st.markdown("""<h3 style='text-align: center; front-size:15px;'>
         💋 似ている色のリップ TOP5
         </h3> 
         """, unsafe_allow_html=True)
@@ -105,22 +105,7 @@ if uploaded_file:
             )
 
             st.write(f"RGB: {lip['color']}")
-            st.markdown(
-                f"""
-                <a href="{lip['link']}" target="_blank">
-                <button style="
-                    background-color:#ff4b6e;
-                    color:white;
-                    padding:10px 16px;
-                    border:none;
-                    border-radius:8px;
-                    font-size:16px;
-                ">
-                👉 商品を見る
-                </button>
-                </a>
-                """, unsafe_allow_html=True
-            )
+            st.link_button("👉 商品を見る", lip["link"], use_container_width=True)
             st.write("---")
 
 #写真拡大機能
