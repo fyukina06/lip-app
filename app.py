@@ -73,7 +73,7 @@ if uploaded_file:
 
             image_url = lip.get("image")
             if image_url:
-            st.image(image_url, width=150)
+                st.image(image_url, width=150)
 
             lr, lg, lb = lip["color"]
             lip_hex = '#{:02x}{:02x}{:02x}'.format(lr, lg, lb)
