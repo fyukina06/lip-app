@@ -32,8 +32,12 @@ if uploaded_file:
     image = Image.open(uploaded_file).convert("RGB")
     img_w, img_h = image.size
 
+    display_image = image.copy()
+    display_image.thumbnail((300, 300))
+
     st.write("画像の中のリップ部分をクリックしてください")
-    value = streamlit_image_coordinates(image, key="coords")
+    
+    value = streamlit_image_coordinates(display_image, key="coords")
 
     if value:
         # クリック座標を元画像サイズに変換
