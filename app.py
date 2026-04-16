@@ -102,20 +102,22 @@ if uploaded_file:
             )
 
             st.write(f"RGB: {lip['color']}")
-            st.markdown(f"""
-            <a href="{lip['link']}" target="_blank">
-            <button style="
-                background-color:#ff4b6e;
-                color:white;
-                padding:10px 16px;
-                border:none;
-                border-radius:8px;
-                font-size:16px;
-            ">
-            👉 商品を見る
-            </button>
-            </a>
-            """, unsafe_allow_html=True)
+            st.markdown(
+                f"""
+                <a href="{lip['link']}" target="_blank">
+                <button style="
+                    background-color:#ff4b6e;
+                    color:white;
+                    padding:10px 16px;
+                    border:none;
+                    border-radius:8px;
+                    font-size:16px;
+                ">
+                👉 商品を見る
+                </button>
+                </a>
+                """, unsafe_allow_html=True
+            )
             st.write("---")
 
 #写真拡大機能
