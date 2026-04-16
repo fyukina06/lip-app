@@ -107,6 +107,7 @@ if uploaded_file:
             st.write(f"RGB: {lip['color']}")
             st.link_button("👉 商品を見る", lip["link"], use_container_width=True)
             st.write("---")
+            st.write(lip["link"])
 
 #写真拡大機能
 #タイトルの文字大きさ小さくする
