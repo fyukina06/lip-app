@@ -73,7 +73,9 @@ if uploaded_file:
             lip_hex = '#{:02x}{:02x}{:02x}'.format(lr, lg, lb)
 
             st.markdown(f"### {i}. {lip['name']}")
-            st.image(lip["image"], width=150)
+            image_url = lip.get("image")
+             if image_url:
+               st.image(image_url, width=150)
             st.markdown(
                 f"""
                 <div style="
