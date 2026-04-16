@@ -9,11 +9,11 @@ st.title("💄 LCC - LipColorCode")
 
 # --- データベース ---
 LIP_DATABASE = [
-    {"name": "王道コーラルピンク", "color": (255, 102, 102), "link": },
-    {"name": "大人なテラコッタ", "color": (153, 51, 0), "link": },
-    {"name": "透明感ラズベリー", "color": (204, 0, 102), "link":},
-    {"name": "華やか朱色レッド", "color": (255, 69, 0), "link": },
-    {"name": "落ち着いたベージュ", "color": (210, 180, 140), "link": },
+    {"name": "王道コーラルピンク", "color": (255, 102, 102), "link":"" },
+    {"name": "大人なテラコッタ", "color": (153, 51, 0), "link": ""},
+    {"name": "透明感ラズベリー", "color": (204, 0, 102), "link":""},
+    {"name": "華やか朱色レッド", "color": (255, 69, 0), "link":"" },
+    {"name": "落ち着いたベージュ", "color": (210, 180, 140), "link": ""},
     {"name": "Ririmew_muted sheer tint_02pink fondue", "color": (193, 90, 93), "link": "https://hb.afl.rakuten.co.jp/ichiba/52e52694.a8b522e5.52e52695.0c1b728d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flilyanna%2Fririmew-tint%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"},
 ]
 
