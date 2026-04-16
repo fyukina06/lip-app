@@ -69,29 +69,29 @@ if uploaded_file:
         st.subheader("💋 似ている色のリップ TOP5")
 
         for i, lip in enumerate(top5, 1):
-    st.markdown(f"### {i}. {lip['name']}")
+            st.markdown(f"### {i}. {lip['name']}")
 
-    image_url = lip.get("image")
-    if image_url:
-        st.image(image_url, width=150)
+            image_url = lip.get("image")
+            if image_url:
+            st.image(image_url, width=150)
 
-    lr, lg, lb = lip["color"]
-    lip_hex = '#{:02x}{:02x}{:02x}'.format(lr, lg, lb)
+            lr, lg, lb = lip["color"]
+            lip_hex = '#{:02x}{:02x}{:02x}'.format(lr, lg, lb)
 
-    st.markdown(
-        f"""
-        <div style="
-            background-color:{lip_hex};
-            width:80px;
-            height:30px;
-            border-radius:6px;
-            border:1px solid #ccc;
-            margin-bottom:8px;
-        "></div>
-        """,
-        unsafe_allow_html=True
-    )
+            st.markdown(
+                f"""
+                <div style="
+                 background-color:{lip_hex};
+                    width:80px;
+                    height:30px;
+                    border-radius:6px;
+                    border:1px solid #ccc;
+                    margin-bottom:8px;
+                "></div>
+                """,
+                unsafe_allow_html=True
+            )
 
-    st.write(f"RGB: {lip['color']}")
-    st.markdown(f"[商品リンクを見る]({lip['link']})")
-    st.write("---")
+            st.write(f"RGB: {lip['color']}")
+            st.markdown(f"[商品リンクを見る]({lip['link']})")
+            st.write("---")
