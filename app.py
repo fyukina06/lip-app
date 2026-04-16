@@ -58,6 +58,7 @@ if uploaded_file:
             results.append({
                 "name": lip["name"],
                 "color": lip["color"],
+                "image": lip["image"],
                 "link": lip["link"],
                 "distance": dist
             })
