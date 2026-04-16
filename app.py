@@ -75,7 +75,10 @@ if uploaded_file:
         top5 = sorted(results, key=lambda x: x["distance"])[:5]
 
         st.divider()
-        st.markdown("""<h3💋 似ている色のリップ TOP5")
+        st.markdown("""<h3 style='text-align: center; front-size:20px;'>
+        💋 似ている色のリップ TOP5
+        </h3> 
+        """, unsafe_allow_html=True)
 
         for i, lip in enumerate(top5, 1):
             st.markdown(f"### {i}. {lip['name']}")
