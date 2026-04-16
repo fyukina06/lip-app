@@ -6,7 +6,9 @@ import math
 # --- 1. 初期設定とデータベース ---
 st.set_page_config(page_title="MyLipCode", layout="centered")
 st.markdown("""
-<h2 style='text-align: center; color:#ff4b6e;'>👩‍❤️‍💋‍👨plimy - リップカラー診断アプリ -</h2>
+<h2 style='text-align: center; color:#ff4b6e; margin-bottom:0;'>👩‍❤️‍💋‍👨plimy </h2>
+<p style='text-align: center; font-size:14px; color:#666; margin-top:5px;'>
+- リップカラー診断アプリ -</p>
 """, unsafe_allow_html=True)
 
 # --- データベース ---
