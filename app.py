@@ -4,8 +4,8 @@ from streamlit_image_coordinates import streamlit_image_coordinates
 import math
 
 # --- 1. 初期設定とデータベース ---
-st.set_page_config(page_title="MLC - MyLipCode -", layout="centered")
-st.title("💄 MLC - MyLipCode -")
+st.set_page_config(page_title="MyLipCode", layout="centered")
+st.title("👩‍❤️‍💋‍👨plimy - リップカラー診断アプリ")
 
 # --- データベース ---
 LIP_DATABASE = [
@@ -100,3 +100,6 @@ if uploaded_file:
             st.write(f"RGB: {lip['color']}")
             st.markdown(f"[商品リンクを見る]({lip['link']})")
             st.write("---")
+
+#写真拡大機能
+#タイトルの文字大きさ小さくする
