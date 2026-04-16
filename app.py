@@ -33,7 +33,7 @@ if uploaded_file:
     img_w, img_h = image.size
 
     display_image = image.copy()
-    display_image.thumbnail((500, 500))
+    display_image.thumbnail((650, 650))
 
     st.write("画像の中のリップ部分をクリックしてください")
     
