@@ -61,7 +61,10 @@ if uploaded_file:
         hex_color = '#{:02x}{:02x}{:02x}'.format(r, g, b)
 
         st.divider()
-        st.subheader("📍 抽出した色")
+        st.markdown("""<h3 style='text-align: center; font-size:18px;'>
+        📍 抽出した色
+        </h3> 
+        """, unsafe_allow_html=True)
         st.write(f"RGB: ({r}, {g}, {b})")
         st.code(hex_color)
         st.color_picker("色の確認", hex_color, disabled=True)
