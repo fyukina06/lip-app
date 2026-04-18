@@ -119,7 +119,7 @@ if uploaded_file:
 
             with col2:
                 st.markdown(
-                    f\"\"\"
+                    f"""
         <div style='
             width:18px;
             height:18px;
@@ -127,7 +127,7 @@ if uploaded_file:
             background-color:{hex_color};
             margin-top:12px;
         '></div>
-        \"\"\",
+        """,
                     unsafe_allow_html=True
                 )
 
