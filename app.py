@@ -66,7 +66,6 @@ if uploaded_file:
         </h3> 
         """, unsafe_allow_html=True)
         st.write(f"RGB: ({r}, {g}, {b})")
-        st.code(hex_color)
         st.color_picker("色の確認", hex_color, disabled=True)
 
         # データベース内の各リップとの距離を計算
