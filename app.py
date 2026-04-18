@@ -122,8 +122,14 @@ if uploaded_file:
 
         st.divider()
         st.markdown("""<h3 style='text-align: center; font-size:18px;'>
-        👧 似ている色のリップ TOP5
+        👧 似ている色味のリップ TOP5
         </h3> 
+        """, unsafe_allow_html=True)
+
+       st.markdown("""
+        <p style='text-align: center; font-size:13px; color:#666;'>
+        ※写真や光の加減によって見え方が変わるため、近い色味の候補を表示しています。
+        </p>
         """, unsafe_allow_html=True)
 
         medals = ["🥇", "🥈", "🥉"]
@@ -177,3 +183,6 @@ if uploaded_file:
 #写真拡大機能
 #タイトルの文字大きさ小さくする
 #イエベブルべ
+#値段で絞る
+#タグ、プチプラ、青みより、ツヤつける
+#お気に入り保存
