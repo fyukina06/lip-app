@@ -82,7 +82,7 @@ if uploaded_file:
 
         st.divider()
         st.markdown("""<h3 style='text-align: center; front-size:15px;'>
-        🧚🏼‍♂️ 似ている色のリップ TOP5
+        👧 似ている色のリップ TOP5
         </h3> 
         """, unsafe_allow_html=True)
 
@@ -105,29 +105,24 @@ if uploaded_file:
             r, g, b = lip["color"]
             hex_color = '#{:02x}{:02x}{:02x}'.format(r, g, b)
 
-            st.markdown(
-                f"""
-                <div style="margin-bottom:10px;">
-                    <div style="font-size:16px; color:#888; font-weight:600;">
-                        {rank} {brand}
-                    </div>
+            st.markdown(f"""<div style="margin-bottom:10px;">
+            <div style="font-size:16px; color:#888; font-weight:600;">
+            {rank} {brand}
+            </div>
 
-                    <div style="font-size:28px; font-weight:700; line-height:1.4;">
-                        {item_name} {shade}
-                        <span style="
-                            display:inline-block;
-                            width:16px;
-                            height:16px;
-                            border-radius:50%;
-                            background-color:{hex_color};
-                            margin-left:8px;
-                            vertical-align:middle;
-                        "></span>
-                    </div>
-                </div>
-                """,
-                unsafe_allow_html=True
-            )
+            <div style="font-size:28px; font-weight:700; line-height:1.4;">
+            {item_name} {shade}
+            <span style="
+            display:inline-block;
+            width:16px;
+            height:16px;
+            border-radius:50%;
+            background-color:{hex_color};
+            margin-left:8px;
+            vertical-align:middle;
+            "></span>
+            </div>
+            </div>""", unsafe_allow_html=True)
 
             st.link_button("👉 商品を見る", lip["link"], use_container_width=True)
             st.write("---")
