@@ -81,7 +81,7 @@ if uploaded_file:
         top5 = sorted(results, key=lambda x: x["distance"])[:5]
 
         st.divider()
-        st.markdown("""<h3 style='text-align: center; front-size:15px;'>
+        st.markdown("""<h3 style='text-align: center; font-size:15px;'>
         👧 似ている色のリップ TOP5
         </h3> 
         """, unsafe_allow_html=True)
@@ -94,35 +94,42 @@ if uploaded_file:
             else:
                 rank = f"{i+1}."
 
-            # 名前を "_" で分割
             parts = lip["name"].split("_")
-
             brand = parts[0] if len(parts) > 0 else ""
             item_name = parts[1] if len(parts) > 1 else ""
             shade = parts[2] if len(parts) > 2 else ""
 
-            # 色の丸
             r, g, b = lip["color"]
             hex_color = '#{:02x}{:02x}{:02x}'.format(r, g, b)
 
-            st.markdown(f"""<div style="margin-bottom:10px;">
-            <div style="font-size:16px; color:#888; font-weight:600;">
-            {rank} {brand}
-            </div>
+            # 1行目：順位 + ブランド
+            st.markdown(
+                f"<div style='font-size:16px; color:#888; font-weight:600;'>{rank} {brand}</div>",
+                unsafe_allow_html=True
+            )
 
-            <div style="font-size:28px; font-weight:700; line-height:1.4;">
-            {item_name} {shade}
-            <span style="
-            display:inline-block;
-            width:16px;
-            height:16px;
+            # 2行目：商品名と色丸
+            col1, col2 = st.columns([10, 1])
+
+            with col1:
+                st.markdown(
+                    f"<div style='font-size:26px; font-weight:700; line-height:1.4;'>{item_name} {shade}</div>",
+                    unsafe_allow_html=True
+                )
+
+            with col2:
+                st.markdown(
+                    f\"\"\"
+        <div style='
+            width:18px;
+            height:18px;
             border-radius:50%;
             background-color:{hex_color};
-            margin-left:8px;
-            vertical-align:middle;
-            "></span>
-            </div>
-            </div>""", unsafe_allow_html=True)
+            margin-top:12px;
+        '></div>
+        \"\"\",
+                    unsafe_allow_html=True
+                )
 
             st.link_button("👉 商品を見る", lip["link"], use_container_width=True)
             st.write("---")
