@@ -94,23 +94,37 @@ if uploaded_file:
             else:
                 rank = f"{i+1}."
 
+            # 名前を "_" で分割
+            parts = lip["name"].split("_")
+
+            brand = parts[0] if len(parts) > 0 else ""
+            item_name = parts[1] if len(parts) > 1 else ""
+            shade = parts[2] if len(parts) > 2 else ""
+
             # 色の丸
             r, g, b = lip["color"]
             hex_color = '#{:02x}{:02x}{:02x}'.format(r, g, b)
 
             st.markdown(
                 f"""
-                <h3>
-                {rank} {lip['name']}
-                <span style="
-                    display:inline-block;
-                    width:15px;
-                    height:15px;
-                    border-radius:50%;
-                    background-color:{hex_color};
-                    margin-left:8px;
-                "></span>
-                </h3>
+                <div style="margin-bottom:10px;">
+                    <div style="font-size:16px; color:#888; font-weight:600;">
+                        {rank} {brand}
+                    </div>
+
+                    <div style="font-size:28px; font-weight:700; line-height:1.4;">
+                        {item_name} {shade}
+                        <span style="
+                            display:inline-block;
+                            width:16px;
+                            height:16px;
+                            border-radius:50%;
+                            background-color:{hex_color};
+                            margin-left:8px;
+                            vertical-align:middle;
+                        "></span>
+                    </div>
+                </div>
                 """,
                 unsafe_allow_html=True
             )
