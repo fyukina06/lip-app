@@ -118,7 +118,7 @@ if uploaded_file:
             })
 
         # 距離が近い順に並べて上位5件取得
-        top5 = sorted(results, key=lambda x: x["distance"])[:5]
+        top3 = sorted(results, key=lambda x: x["distance"])[:3]
 
         st.divider()
         st.markdown("""<h3 style='text-align: center; font-size:18px;'>
