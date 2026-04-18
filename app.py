@@ -13,12 +13,19 @@ st.markdown("""
 
 # --- データベース ---
 LIP_DATABASE = [
-    {"name": "クレド・ポー・ボーテ_ルージュアレーブル_5 Camellia", "color": (226, 96, 84), "image":"https://shop.r10s.jp/yotsubadrug/cabinet/09767393/4514254992449.jpg", "link":"https://hb.afl.rakuten.co.jp/ichiba/52e56f85.b110c142.52e56f86.1714c1d5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Friri-shop0707%2F4514254992449%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" },
-    {"name": "ケイト_リップモンスター_03 陽炎", "color": (208, 121, 94), "image":"https://shop.r10s.jp/gramsky/cabinet/yuragipic/systempic023/gram08ykcz6y11.jpg", "link": "https://hb.afl.rakuten.co.jp/ichiba/4be181e5.85aa38ae.4be181e6.80bc2ede/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsian%2F820186%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"},
-    {"name": "ケイト_リップモンスター_05 ダークフィグ", "color": (197, 100, 93), "image":"https://m.media-amazon.com/images/I/51rDje5yJPL._AC_SL1500_.jpg", "link": "https://item.rakuten.co.jp/matsuya-cosme/82024/?scid=af_pc_etc&sc2id=af_101_0_0"},
-    {"name": "peripera_Gリップグロス_06 メイド イット", "color": (173, 83, 82), "image":"https://image.rakuten.co.jp/0101marui/cabinet/ce016/292/064573198754759_1.jpg", "link":"https://hb.afl.rakuten.co.jp/ichiba/4be50bb9.be99ec7e.4be50bba.38ca64b6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2F0101marui%2Fce016292060101%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" },
-    {"name": "AMUSE_BEBE TINT_バニラローズ", "color": (183, 68, 83), "image":"https://m.media-amazon.com/images/I/61ypavd+32L._AC_SL1500_.jpg", "link": "https://hb.afl.rakuten.co.jp/ichiba/52e58eed.23c7c9c4.52e58eee.cee59967/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshop-lady%2Famuse-bebe-tint%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"},
-    {"name": "Ririmew_muted sheer tint_02 pink fondue", "color": (193, 90, 93), "image": "https://shop.r10s.jp/lilyanna/cabinet/gazou/r/ririmew_tint_n_09.jpg", "link": "https://hb.afl.rakuten.co.jp/ichiba/52e52694.a8b522e5.52e52695.0c1b728d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flilyanna%2Fririmew-tint%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"},
+    {"name": "クレド・ポー・ボーテ_ルージュアレーブル_5 Camellia", "color": (226, 96, 84), 
+     "link":"https://hb.afl.rakuten.co.jp/ichiba/52e56f85.b110c142.52e56f86.1714c1d5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Friri-shop0707%2F4514254992449%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" },
+    {"name": "ケイト_リップモンスター_03 陽炎", "color": (208, 121, 94), 
+     "link": "https://hb.afl.rakuten.co.jp/ichiba/4be181e5.85aa38ae.4be181e6.80bc2ede/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsian%2F820186%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"},
+    {"name": "ケイト_リップモンスター_05 ダークフィグ", "color": (197, 100, 93), 
+    "link":"https://hb.afl.rakuten.co.jp/ichiba/4be17cec.5f1de9c8.4be17ced.6e0541fe/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmatsuya-cosme%2F82024%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"},
+    {"name": "peripera_Gリップグロス_06 メイド イット", 
+    "color": (173, 83, 82), 
+     "link":"https://hb.afl.rakuten.co.jp/ichiba/4be50bb9.be99ec7e.4be50bba.38ca64b6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2F0101marui%2Fce016292060101%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" },
+    {"name": "AMUSE_BEBE TINT_バニラローズ", "color": (183, 68, 83), 
+    "link": "https://hb.afl.rakuten.co.jp/ichiba/52e58eed.23c7c9c4.52e58eee.cee59967/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshop-lady%2Famuse-bebe-tint%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"},
+    {"name": "Ririmew_muted sheer tint_02 pink fondue", "color": (193, 90, 93), 
+    "link": "https://hb.afl.rakuten.co.jp/ichiba/52e52694.a8b522e5.52e52695.0c1b728d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flilyanna%2Fririmew-tint%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"},
 ]
 
 # --- 2. 色の距離を計算する関数 ---
@@ -66,7 +73,6 @@ if uploaded_file:
             results.append({
                 "name": lip["name"],
                 "color": lip["color"],
-                "image": lip["image"],
                 "link": lip["link"],
                 "distance": dist
             })
@@ -76,38 +82,41 @@ if uploaded_file:
 
         st.divider()
         st.markdown("""<h3 style='text-align: center; front-size:15px;'>
-        💋 似ている色のリップ TOP5
+        🧚🏼‍♂️ 似ている色のリップ TOP5
         </h3> 
         """, unsafe_allow_html=True)
 
-        for i, lip in enumerate(top5, 1):
-            st.markdown(f"### {i}. {lip['name']}")
+        medals = ["🥇", "🥈", "🥉"]
 
-            image_url = lip.get("image")
-            if image_url:
-                st.image(image_url, width=150)
+        for i, lip in enumerate(top5):
+            if i < 3:
+                rank = medals[i]
+            else:
+                rank = f"{i+1}."
 
-            lr, lg, lb = lip["color"]
-            lip_hex = '#{:02x}{:02x}{:02x}'.format(lr, lg, lb)
+            # 色の丸
+            r, g, b = lip["color"]
+            hex_color = '#{:02x}{:02x}{:02x}'.format(r, g, b)
 
             st.markdown(
                 f"""
-                <div style="
-                 background-color:{lip_hex};
-                    width:80px;
-                    height:30px;
-                    border-radius:6px;
-                    border:1px solid #ccc;
-                    margin-bottom:8px;
-                "></div>
+                <h3>
+                {rank} {lip['name']}
+                <span style="
+                    display:inline-block;
+                    width:15px;
+                    height:15px;
+                    border-radius:50%;
+                    background-color:{hex_color};
+                    margin-left:8px;
+                "></span>
+                </h3>
                 """,
                 unsafe_allow_html=True
             )
 
-            st.write(f"RGB: {lip['color']}")
             st.link_button("👉 商品を見る", lip["link"], use_container_width=True)
             st.write("---")
-            st.write(lip["link"])
 
 #写真拡大機能
 #タイトルの文字大きさ小さくする
