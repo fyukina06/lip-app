@@ -113,7 +113,7 @@ if uploaded_file:
 
             with col1:
                 st.markdown(
-                    f"<div style='font-size:26px; font-weight:700; line-height:1.4;'>{item_name} {shade}</div>",
+                    f"<div style='font-size:22px; font-weight:700; line-height:1.4;'>{item_name} {shade}</div>",
                     unsafe_allow_html=True
                 )
 
