@@ -122,7 +122,7 @@ if uploaded_file:
 
         st.divider()
         st.markdown("""<h3 style='text-align: center; font-size:18px;'>
-        👧 似ている色味のリップ TOP5
+        👧 似ている色味のリップ TOP3
         </h3> 
         """, unsafe_allow_html=True)
 
@@ -134,11 +134,9 @@ if uploaded_file:
 
         medals = ["🥇", "🥈", "🥉"]
 
-        for i, lip in enumerate(top5):
+        for i, lip in enumerate(top3):
             if i < 3:
                 rank = medals[i]
-            else:
-                rank = f"{i+1}."
 
             parts = lip["name"].split("_")
             brand = parts[0] if len(parts) > 0 else ""
@@ -184,5 +182,5 @@ if uploaded_file:
 #タイトルの文字大きさ小さくする
 #イエベブルべ
 #値段で絞る
-#タグ、プチプラ、青みより、ツヤつける
+#タグ、プチプラ、青みより、ツヤ、明るいとかつける
 #お気に入り保存
