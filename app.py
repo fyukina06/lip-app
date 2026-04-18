@@ -126,7 +126,7 @@ if uploaded_file:
         </h3> 
         """, unsafe_allow_html=True)
 
-       st.markdown("""
+        st.markdown("""
         <p style='text-align: center; font-size:13px; color:#666;'>
         ※写真や光の加減によって見え方が変わるため、近い色味の候補を表示しています。
         </p>
