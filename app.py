@@ -121,7 +121,7 @@ def get_brightness_label(color):
 def get_price_label(price_type):
     if price_type == "プチプラ":
         return "プチプラ"
-    elif price_type == "デパコス"
+    elif price_type == "デパコス":
         return "デパコス"
     else:
         return "価格帯不明"
