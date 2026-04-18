@@ -170,7 +170,10 @@ if uploaded_file:
         selected_brightness = get_brightness_label(selected_color)
         selected_pc = get_pc_label(selected_color)
 
-        st.markdown("### この色の特徴")
+        st.markdown("""<h3 style='text-align: center; font-size:18px;'>
+        この色の特徴
+        </h3> 
+        """, unsafe_allow_html=True)
         st.write(f"・深さ：{selected_depth}")
         st.write(f"・明るさ：{selected_brightness}")
         st.write(f"・パーソナル傾向：{selected_pc}")
