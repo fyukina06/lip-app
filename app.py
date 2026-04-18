@@ -207,15 +207,6 @@ if uploaded_file:
         selected_brightness = get_brightness_label(selected_color)
         selected_pc = get_pc_label(selected_color)
 
-        st.markdown(
-            f"""
-            <div style='font-size:14px; color:#666; margin-bottom:16px;'>
-            この色の特徴（参考）：{selected_depth}｜{selected_brightness}｜{selected_pc}
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-
         labels = ["🥇 一番近い候補", "🥈 近い候補", "🥉 近い候補"]
 
         for i, lip in enumerate(top3):
