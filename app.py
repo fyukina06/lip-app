@@ -81,7 +81,7 @@ if uploaded_file:
         top5 = sorted(results, key=lambda x: x["distance"])[:5]
 
         st.divider()
-        st.markdown("""<h3 style='text-align: center; font-size:20px;'>
+        st.markdown("""<h3 style='text-align: center; font-size:18px;'>
         👧 似ている色のリップ TOP5
         </h3> 
         """, unsafe_allow_html=True)
