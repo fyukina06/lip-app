@@ -11,8 +11,28 @@ st.set_page_config(page_title="MyLipCode", layout="centered")
 st.markdown("""
 <h2 style='text-align: center; color:#ff4b6e; margin-bottom:0;'>👩‍❤️‍💋‍👨plimy </h2>
 <p style='text-align: center; font-size:14px; color:#666; margin-top:5px;'>
-- リップカラー診断アプリ -</p>
+- 写真から似ているリップを見つけるカラー診断アプリ -</p>
 """, unsafe_allow_html=True)
+
+st.markdown("""
+手持ちのリップや気になる色の写真から、  
+似ている色味のリップ候補を見つけられるWebアプリです。
+""")
+
+st.markdown("### 使い方")
+st.markdown("""
+1. リップの写真をアップロード  
+2. リップ部分をタップ  
+3. 肌色部分をタップ  
+4. 近い色味のリップ候補をチェック
+""")
+
+st.markdown("### ご利用時のポイント")
+st.markdown("""
+- 明るい場所で撮影した写真がおすすめです  
+- 光の当たり方によって色の見え方は変わります  
+- 診断結果は「近い色味の候補」として表示しています
+""")
 
 # --- データベース ---
 LIP_DATABASE = [
