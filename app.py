@@ -216,10 +216,9 @@ if uploaded_file:
     img_w, img_h = image.size
 
     display_image = image.copy()
-    display_image.thumbnail((400, 400))
+    display_image.thumbnail((350, 350))
 
-    value = streamlit_image_coordinates(display_image, key="coords", width=350)
-
+    
     # セッションでクリック位置を保持
     if "lip_point" not in st.session_state:
         st.session_state.lip_point = None
