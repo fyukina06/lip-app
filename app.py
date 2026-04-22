@@ -1,3 +1,11 @@
+import streamlit as st
+from PIL import Image
+from streamlit_image_coordinates import streamlit_image_coordinates
+import math
+import numpy as np
+import colorsys
+from typing import Tuple
+
 st.markdown("""
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
@@ -8,14 +16,6 @@ gtag('js', new Date());
 gtag('config', 'G-JQ9KE2MMRZ');
 </script>
 """, unsafe_allow_html=True)
-
-import streamlit as st
-from PIL import Image
-from streamlit_image_coordinates import streamlit_image_coordinates
-import math
-import numpy as np
-import colorsys
-from typing import Tuple
 
 # --- 1. 初期設定とデータベース ---
 st.set_page_config(page_title="MyLipCode", layout="centered")
