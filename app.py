@@ -15,8 +15,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("""
-手持ちのリップや気になる色の写真から、  
+手持ちのリップの写真から色を分析して、 
 似ている色味のリップ候補を見つけられるWebアプリです。
+ブルべ・イエベなどの色味の傾向も参考として表示します。
 """)
 
 st.markdown("""<h3 style='text-align: center; font-size:18px;'>
@@ -251,7 +252,8 @@ if uploaded_file:
     if "skin_point" not in st.session_state:
         st.session_state.skin_point = None
 
-    st.info("① まずリップ部分をクリック → ② 次に頬の肌部分をクリックしてください")
+    st.info("""① まずリップ部分をクリック
+            → ② 次に頬の肌部分をクリックしてください""")
 
     # --- リップ位置選択 ---
     st.write("① 画像の中のリップ部分をクリックしてください")
@@ -266,7 +268,8 @@ if uploaded_file:
         st.write(f"リップ位置: {st.session_state.lip_point}")
 
     # --- 肌位置選択 ---
-    st.write("② 肌色部分をクリックしてください（影の少ない場所がおすすめ）")
+    st.write("""② 肌色部分をクリックしてください
+    （影の少ない場所がおすすめ）""")
     skin_value = streamlit_image_coordinates(display_image, key="skin_coords")
 
     if skin_value:
@@ -353,7 +356,8 @@ if uploaded_file:
 
         st.markdown("""
         <p style='text-align: center; font-size:13px; color:#666;'>
-        ※写真や光の加減によって見え方が変わるため、肌色との差分を使って近い候補を表示しています。
+        ※写真や光の加減によって見え方が変わるため、
+        肌色との差分を使って近い候補を表示しています。
         </p>
         """, unsafe_allow_html=True)
 
