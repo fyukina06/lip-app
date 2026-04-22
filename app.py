@@ -19,7 +19,10 @@ st.markdown("""
 似ている色味のリップ候補を見つけられるWebアプリです。
 """)
 
-st.markdown("### 使い方")
+st.markdown("""<h3 style='text-align: center; font-size:18px;'>
+        使い方
+        </h3> 
+        """, unsafe_allow_html=True)
 st.markdown("""
 1. リップの写真をアップロード  
 2. リップ部分をタップ  
@@ -27,7 +30,10 @@ st.markdown("""
 4. 近い色味のリップ候補をチェック
 """)
 
-st.markdown("### ご利用時のポイント")
+st.markdown("""<h3 style='text-align: center; font-size:18px;'>
+        ご利用時のポイント
+        </h3> 
+        """, unsafe_allow_html=True)
 st.markdown("""
 - 明るい場所で撮影した写真がおすすめです  
 - 光の当たり方によって色の見え方は変わります  
@@ -260,7 +266,7 @@ if uploaded_file:
         st.write(f"リップ位置: {st.session_state.lip_point}")
 
     # --- 肌位置選択 ---
-    st.write("② 頬の肌部分をクリックしてください（影の少ない場所がおすすめ）")
+    st.write("② 肌色部分をクリックしてください（影の少ない場所がおすすめ）")
     skin_value = streamlit_image_coordinates(display_image, key="skin_coords")
 
     if skin_value:
